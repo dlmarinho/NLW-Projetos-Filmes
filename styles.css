@@ -1,0 +1,151 @@
+* { /*To tirando todos os espaços que o navegador bota por padrão.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body *{
+    font-family: "Montserrat", sans-serif;
+    line-height: 160%; /*Altura da linha*/
+}
+
+header {
+    margin-top: 32px;
+    height: 120px;
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding: 4px;
+    display: flex;
+    transition: transform 0.3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header img {
+    width: 100%; /*o tamanho da imagem vai ser em relação ao tamanho da div que ela está*/
+    border-radius: 50%;
+}
+
+body{
+    background-image: url(./assets/Fundo.jpg); /*Uma função que recebe o lugar onde a imagem está*/
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 13px;
+
+
+}
+
+section div {
+    background-color: #262629;
+    border-radius: 8px;
+    padding: 24px 32px 32px 32px;
+}
+
+section h2 {
+    letter-spacing: -0.46px;
+}
+
+section p{
+    letter-spacing: -0.18px;
+    color: #C1C1C1;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+section ul li {
+    transition: transform 0.3s;
+}
+
+.anime-list img {
+    border-radius: 8px;
+    width: 100px;
+    border: 1px solid #555555
+}
+
+
+.series-list img {
+    border-radius: 8px;
+    width: 100px;
+    border: 1px solid #555555
+}
+
+/*Animation*/
+
+/*Colocandoa a animção no meu elemento*/
+header div {
+    animation: fromTop .8s backwards; /*Backwards - Eu faço a meu elemento Html iniciar com As propriedades da animação*/
+    animation-delay: .2s;
+}
+
+main section {
+    animation: fromSide .8s backwards; 
+}
+
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+/*Definindo a animação*/
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) /* O zero sempre será onde meu elemnto tá*/
+    }
+}
+
+@Keyframes fromSide {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    To{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
