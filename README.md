@@ -6,7 +6,7 @@ Projeto desenvolvido depois Next Level week da Roctseat.
 
 Aplicando tudo que foi aprendido no evento.
 
-[Clique aqui para acessar](dlmarinho.github.io/NLW-Projetos-Filmes)
+[Clique aqui para acessar](https://dlmarinho.github.io/NLW-Projetos-Filmes)
 
 ## Tecnologias
 - HTML
